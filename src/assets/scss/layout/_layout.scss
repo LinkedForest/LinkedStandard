@@ -1,0 +1,25 @@
+//========================================//
+// Layouts //
+//========================================//
+
+// Document
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: $font-size;
+}
+
+body {
+  @include fontFamily($enFont);
+  @include font-size($font-size);
+  font-weight: $font-weight-def;
+  line-height: $line-height-def;
+  color: $body-text-clr;
+  background-color: $body-back-clr;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba($black, 0);
+}

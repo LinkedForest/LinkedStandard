@@ -1,0 +1,66 @@
+//========================================//
+// Variables //
+//========================================//
+
+// Fonts
+//=====================
+
+// Font Family
+$enFont:                    'Roboto', sans-serif;
+$arFont:                    'Cairo', sans-serif;
+
+// Font Sizes
+$font-size:                 14px !default;
+$font-size-def:             1rem !default;
+$font-size-nrm:             $font-size-def * 1.143 !default;
+$font-size-lrg:             $font-size-def * 1.286 !default;
+
+// Font Weight
+$font-weight-ltr:           200 !default;
+$font-weight-lte:           300 !default;
+$font-weight-def:           400 !default;
+$font-weight-nrm:           600 !default;
+$font-weight-bld:           700 !default;
+$font-weight-bdr:           900 !default;
+
+// Line Height
+$line-height-sml:           1.25 !default;
+$line-height-def:           1.5 !default;
+$line-height-lrg:           2 !default;
+
+// Colors
+//=====================
+
+// Site Setup
+$body-back-clr:             $white !default;
+$body-text-clr:             $gray-900 !default;
+
+// Main Colors
+$white:    #ffffff !default;
+$black:    #000000 !default;
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);

@@ -1,0 +1,12 @@
+//========================================//
+// Functions //
+//========================================//
+
+// Fonts
+@mixin fontFamily ($fontLang) {
+  font-family: $fontLang;
+}
+
+@mixin font-size($default) {
+  font-size: $default;
+}
