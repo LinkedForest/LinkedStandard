@@ -3,14 +3,38 @@
   "version": "1.0.0",
   "private": true,
   "description": "SCSS Framework",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
-    "start": "webpack"
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
   },
+  "browserslist": [
+    "> 1%",
+    "last 3 versions"
+  ],
   "author": "LinkedForest",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "autoprefixer": "^9.8.3",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "mqpacker": "^7.0.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.8",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack-dev-server": "^3.11.0"
   }
 }

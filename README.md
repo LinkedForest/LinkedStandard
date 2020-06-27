@@ -23,4 +23,4 @@ LinkedStandard/
 
 ## Copyright and license
 
-Code and documentation copyright 2018–2020 the [LinkedForest Authors](https://linkedforest.com/) Code released under the [MIT License](https://github.com/.../LICENSE).
+Code and documentation copyright 2018–2020 the [LinkedForest Authors](https://linkedforest.com/) Code released under the [MIT License](https://github.com/LinkedForest/LinkedStandard/blob/master/LICENSE).

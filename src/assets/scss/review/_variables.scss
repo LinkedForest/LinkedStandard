@@ -2,12 +2,31 @@
 // Variables //
 //========================================//
 
+// Options
+
+$grids-system:              true !default;
+$spaces-system:             true !default;
+$filter-sidebar:            true !default;
+$results-component:         true !default;
+
+// Main Basics
+//=====================
+
+$enDirection:              ltr;
+$arDirection:              rtl;
+$mnDirection:              $enDirection !default;
+$dfDirection:              true !default;
+
 // Fonts
 //=====================
 
 // Font Family
 $enFont:                    'Roboto', sans-serif;
 $arFont:                    'Cairo', sans-serif;
+$font-family:               $enFont !default;
+
+// Icons Font
+$fa-font-path:              '~@fortawesome/fontawesome-free/webfonts';
 
 // Font Sizes
 $font-size:                 14px !default;
@@ -23,44 +42,68 @@ $font-weight-nrm:           600 !default;
 $font-weight-bld:           700 !default;
 $font-weight-bdr:           900 !default;
 
-// Line Height
+// Font Line Height
 $line-height-sml:           1.25 !default;
 $line-height-def:           1.5 !default;
 $line-height-lrg:           2 !default;
 
+// Sizes
+//=====================
+
+// Responsive Sizes
+$desktop-lrg:               1400px;
+$desktop-med:               1280px;
+$desktop-def:               1024px;
+$desktop-sml:               992px;
+$tablets-lrg:               768px;
+$tablets-def:               640px;
+$mobiles-def:               480px;
+$mobiles-sml:               320px;
+
+// Limited System
+//=====================
+
+// Limited Numbers
+$max-spaces:                100;
+$low-spaces:                0;
+
+// Grid System
+$grids:                     12 !default;
+
 // Colors
 //=====================
 
-// Site Setup
-$body-back-clr:             $white !default;
-$body-text-clr:             $gray-900 !default;
-
 // Main Colors
-$white:    #ffffff !default;
-$black:    #000000 !default;
+$white:                     #ffffff !default;
+$black:                     #000000 !default;
+$project-color:             #07aba2 !default;
 
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-100:                  #f8f9fa !default;
+$gray-200:                  #e9ecef !default;
+$gray-300:                  #dee2e6 !default;
+$gray-400:                  #ced4da !default;
+$gray-500:                  #adb5bd !default;
+$gray-600:                  #6c757d !default;
+$gray-700:                  #495057 !default;
+$gray-800:                  #343a40 !default;
+$gray-900:                  #212529 !default;
 
 $grays: () !default;
 $grays: map-merge(
   (
-    "100": $gray-100,
-    "200": $gray-200,
-    "300": $gray-300,
-    "400": $gray-400,
-    "500": $gray-500,
-    "600": $gray-600,
-    "700": $gray-700,
-    "800": $gray-800,
-    "900": $gray-900
+    "100":                  $gray-100,
+    "200":                  $gray-200,
+    "300":                  $gray-300,
+    "400":                  $gray-400,
+    "500":                  $gray-500,
+    "600":                  $gray-600,
+    "700":                  $gray-700,
+    "800":                  $gray-800,
+    "900":                  $gray-900
   ),
   $grays
 );
+
+// Site Setup
+$body-back-clr:             $white !default;
+$body-text-clr:             $gray-900 !default;

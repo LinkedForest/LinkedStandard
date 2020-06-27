@@ -2,67 +2,67 @@
 // Typography //
 //========================================//
 
-$mdc-typography-styles-headline1: (
+$typography-styles-headline1: (
   font-family: unquote("Roboto"),
-  font-size: 96
+  font-size: rem(96)
 );
 
-$mdc-typography-styles-headline2: (
+$typography-styles-headline2: (
   font-family: unquote("Roboto"),
-  font-size: 60
+  font-size: rem(60)
 );
 
-$mdc-typography-styles-headline3: (
+$typography-styles-headline3: (
   font-family: unquote("Roboto"),
-  font-size: 48
+  font-size: rem(48)
 );
 
-$mdc-typography-styles-headline4: (
+$typography-styles-headline4: (
   font-family: unquote("Roboto"),
-  font-size: 34
+  font-size: rem(34)
 );
 
-$mdc-typography-styles-headline5: (
+$typography-styles-headline5: (
   font-family: unquote("Roboto"),
-  font-size: 24
+  font-size: rem(24)
 );
 
-$mdc-typography-styles-headline6: (
+$typography-styles-headline6: (
   font-family: unquote("Roboto"),
-  font-size: 20
+  font-size: rem(20)
 );
 
-$mdc-typography-styles-body1: (
+$typography-styles-body1: (
   font-family: unquote("Roboto"),
-  font-size: 16
+  font-size: rem(16)
 );
 
-$mdc-typography-styles-body2: (
+$typography-styles-body2: (
   font-family: unquote("Roboto"),
-  font-size: 14
+  font-size: rem(14)
 );
 
-$mdc-typography-styles-subtitle1: (
+$typography-styles-subtitle1: (
   font-family: unquote("Roboto"),
-  font-size: 16
+  font-size: rem(16)
 );
 
-$mdc-typography-styles-subtitle2: (
+$typography-styles-subtitle2: (
   font-family: unquote("Roboto"),
-  font-size: 14
+  font-size: rem(14)
 );
 
-$mdc-typography-styles-button: (
+$typography-styles-button: (
   font-family: unquote("Roboto"),
-  font-size: 14
+  font-size: rem(14)
 );
 
-$mdc-typography-styles-overline: (
+$typography-styles-overline: (
   font-family: unquote("Roboto"),
-  font-size: 10
+  font-size: rem(10)
 );
 
-$mdc-typography-styles-caption: (
+$typography-styles-caption: (
   font-family: unquote("Roboto"),
-  font-size: 12
+  font-size: rem(12)
 );
