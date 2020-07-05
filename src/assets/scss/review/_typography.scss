@@ -2,67 +2,83 @@
 // Typography //
 //========================================//
 
-$typography-styles-headline1: (
-  font-family: unquote("Roboto"),
-  font-size: rem(96)
+$typography: (
+        "headline1": rem(96),
+        "headline2": rem(60),
+        "headline3": rem(48),
+        "headline4": rem(34),
+        "headline5": rem(24),
+        "headline6": rem(20),
+        "body1"    : rem(16),
+        "body2"    : rem(14),
+        "subtitle1": rem(16),
+        "subtitle2": rem(14),
+        "button"   : rem(14),
+        "overline" : rem(10),
+        "caption"  : rem(12),
 );
 
-$typography-styles-headline2: (
-  font-family: unquote("Roboto"),
-  font-size: rem(60)
-);
+h1, .h1 {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "headline1");
+}
 
-$typography-styles-headline3: (
-  font-family: unquote("Roboto"),
-  font-size: rem(48)
-);
+h2, .h2 {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "headline2");
+}
 
-$typography-styles-headline4: (
-  font-family: unquote("Roboto"),
-  font-size: rem(34)
-);
+h3, .h3 {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "headline3");
+}
 
-$typography-styles-headline5: (
-  font-family: unquote("Roboto"),
-  font-size: rem(24)
-);
+h4, .h4 {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "headline4");
+}
 
-$typography-styles-headline6: (
-  font-family: unquote("Roboto"),
-  font-size: rem(20)
-);
+h5, .h5 {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "headline5");
+}
 
-$typography-styles-body1: (
-  font-family: unquote("Roboto"),
-  font-size: rem(16)
-);
+h6, .h6 {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "headline6");
+}
 
-$typography-styles-body2: (
-  font-family: unquote("Roboto"),
-  font-size: rem(14)
-);
+body, .body {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "body1");
+}
 
-$typography-styles-subtitle1: (
-  font-family: unquote("Roboto"),
-  font-size: rem(16)
-);
+body.sml, .body.sml {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "body2");
+}
 
-$typography-styles-subtitle2: (
-  font-family: unquote("Roboto"),
-  font-size: rem(14)
-);
+p, .p {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "subtitle1");
+}
 
-$typography-styles-button: (
-  font-family: unquote("Roboto"),
-  font-size: rem(14)
-);
+p.sml, .p.sml {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "subtitle2");
+}
 
-$typography-styles-overline: (
-  font-family: unquote("Roboto"),
-  font-size: rem(10)
-);
+button, .button {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "button");
+}
 
-$typography-styles-caption: (
-  font-family: unquote("Roboto"),
-  font-size: rem(12)
-);
+span, .overline {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "overline");
+}
+
+caption, .caption {
+  @include fontFamily($font-family);
+  font-size: map-get($typography, "caption");
+}

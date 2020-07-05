@@ -5,6 +5,7 @@
 // Main Basics
 @if not $dfDirection {
   $mnDirection: $arDirection;
+  $font-family: $arFont;
 }
 
 // Fonts
@@ -16,71 +17,30 @@
   font-size: $default;
 }
 
+// Font Awesome
+@mixin font-awesome () {
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free", sans-serif;
+}
+
+// Typography
+@function rem($pixels, $context: $font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem
+}
+
 // Images
-@mixin images-div () {
+@mixin background-image() {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-// Spaces
-@if $spaces-system {
-  @for $i from $low-spaces through $max-spaces {
-    .m-#{$i} {
-      margin: $i + px !important;
-    }
-    .mt-#{$i} {
-      margin-top: $i + px !important;
-    }
-    .mb-#{$i} {
-      margin-bottom: $i + px !important;
-    }
-    .ml-#{$i} {
-      margin-left: $i + px !important;
-    }
-    .mr-#{$i} {
-      margin-right: $i + px !important;
-    }
-    .mx-#{$i} {
-      margin-left: $i + px !important;
-      margin-right: $i + px !important;
-    }
-    .my-#{$i} {
-      margin-top: $i + px !important;
-      margin-bottom: $i + px !important;
-    }
-    .p-#{$i} {
-      padding: $i + px !important;
-    }
-    .pt-#{$i} {
-      padding-top: $i + px !important;
-    }
-    .pb-#{$i} {
-      padding-bottom: $i + px !important;
-    }
-    .pl-#{$i} {
-      padding-left: $i + px !important;
-    }
-    .pr-#{$i} {
-      padding-right: $i + px !important;
-    }
-    .px-#{$i} {
-      padding-left: $i + px !important;
-      padding-right: $i + px !important;
-    }
-    .py-#{$i} {
-      padding-top: $i + px !important;
-      padding-bottom: $i + px !important;
-    }
-  }
-}
-
-// Grid System
-@if $grids-system {
-  @for $i from 1 through $grids {
-    .cl-#{$i} {
-      float: left;
-      width: (100% / $grids) * $i !important;
-    }
-  }
 }

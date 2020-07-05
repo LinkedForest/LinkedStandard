@@ -8,11 +8,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
-        app: './src/App.js',
+        linkedstanderd: './src/linkedstandard.js',
+        linkedclasses: './src/linkedclasses.js',
+        linkedfonts: './src/linkedfonts.js'
     },
     mode: 'development',
     output: {
-        filename: 'linkedstanderd.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, './build'),
         publicPath: "/build"
     },
@@ -27,7 +29,9 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    'style-loader',
+                    {
+                        loader: 'style-loader',
+                    },
                     MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader',
@@ -67,7 +71,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'linkedstanderd.css'
+            filename: '[name].bundle.css'
         }),
     ],
     devServer: {

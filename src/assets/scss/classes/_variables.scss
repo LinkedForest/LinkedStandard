@@ -1,0 +1,31 @@
+//========================================//
+// Variables //
+//========================================//
+
+// Options
+//=====================
+
+// Main Options
+$grids-system:              true !default;
+$spaces-system:             true !default;
+
+
+// Limited System
+//=====================
+
+// Grid System
+$grids:                     12 !default;
+
+// Limited Numbers
+$max-spaces:                100;
+$low-spaces:                0;
+
+// Responsive Sizes
+$desktop-lrg:               1400px;
+$desktop-med:               1280px;
+$desktop-def:               1024px;
+$desktop-sml:               992px;
+$tablets-lrg:               768px;
+$tablets-def:               640px;
+$mobiles-def:               480px;
+$mobiles-sml:               320px;

@@ -12,14 +12,10 @@
 @import "review/variables";
 @import "review/functions";
 @import "review/typography";
-
-// Icons
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/brands';
-@import '~@fortawesome/fontawesome-free/scss/solid';
+@import "review/animations";
 
 // Layout
 @import "layout/layout";
+
+// Project Layout
 @import "layout/wathefa/enLayout";
-@import "layout/wathefa/arLayout";
